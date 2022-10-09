@@ -38,5 +38,11 @@ int main()
         cout << x1 << " " << x2;
     }if (a == 0 and b == 0 and c == 0) {
         cout << "x - любое число";
+    }if (a == 0 and b == 0 and c != 0) {
+        cout << "Нет решений";
+    }if (a != 0 and b == 0 and c == 0) {
+        cout << 0;
+    }if (b != 0 and a == 0 and c == 0) {
+        cout << 0;
     }
 }
