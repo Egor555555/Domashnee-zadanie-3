@@ -1,0 +1,20 @@
+#include "pt4.h"
+#include "fstream"
+using namespace std;
+void Solve()
+{
+    Task("TextFile17");
+    ifstream f;
+    f.open("b.txt");
+    int n, a1, a2;
+    f >> n >> a1;
+    bool otvet = true;
+    while (f >> a2)
+    {
+        otvet = a1 * a2 > 0 ? false : otvet;
+        a1 = a2;
+    }
+    f.close();
+    pt << otvet;
+
+}
