@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int max_c = 1;
+    int a;
+    do {
+        cin >> a;
+        if (a != 0 && a % 2 == 0 && (max_c == 1 || max_c < a)) {
+            max_c = a;
+        }
+    } while (a != 0);
+    if (max_c == 1) {
+        cout << "No";
+    }
+    else {
+        cout << max_c;
+    }
+}
