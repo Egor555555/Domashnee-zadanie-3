@@ -25,11 +25,13 @@ int main()
         cout << "Нет решений";
     }if (b == 0 and a < 0 and c > 0) {
         x1 = sqrt(-c / a);
-        cout << x1;
+        x2 = -sqrt(-c / a);
+        cout << x1 << x2;
     }
     if (b == 0 and a > 0 and c < 0) {
         x1 = sqrt(-c / a);
-        cout << x1;
+        x2 = -sqrt(-c / a);
+        cout << x1 << x2;
     }if (c == 0 and a != 0 and b != 0) {
         x1 = 0;
         x2 = -b / a;
